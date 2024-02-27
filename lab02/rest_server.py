@@ -20,8 +20,12 @@ def debug():
 
 @app.route('/product', methods=['POST'])
 def add_product():
+    print("hello")
     try:
-        data = request.form
+        if request.is_json:
+            data = request.get_json()
+        else: 
+            data = request.form
         new_product = Product(data['name'], data['description'])
         products.append(new_product)
         return new_product.get_json()
@@ -39,7 +43,10 @@ def get_product(product_id):
 def update_product(product_id):
     for product in products:
         if product.id == product_id:
-            data = request.form
+            if request.is_json:
+                data = request.get_json()
+            else: 
+                data = request.form
             if 'name' in data:
                 product.name = data['name']
             if 'description' in data:
@@ -66,7 +73,6 @@ def post_icon(product_id):
         filename = f"product_{product_id}_icon.png"
         for product in products:
             if product.id == product_id:
-                print(os.path.join('icons', filename))
                 icon.save(os.path.join(os.getcwd(), 'icons', filename))
                 product.icon = filename
                 return product.get_json()
