@@ -20,7 +20,6 @@ def debug():
 
 @app.route('/product', methods=['POST'])
 def add_product():
-    print("hello")
     try:
         if request.is_json:
             data = request.get_json()

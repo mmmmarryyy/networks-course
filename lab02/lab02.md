@@ -63,6 +63,9 @@
 
 #### Демонстрация работы
 ##### Post product
+
+`поддерживается и json-формат и form-data (поэтому в примерах присутствуют оба)`
+
 <img src="screens/screen1.png" width=500 />
 
 <img src="screens/screen2.png" width=500 />
