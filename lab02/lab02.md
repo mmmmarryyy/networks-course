@@ -62,7 +62,26 @@
 запросы и ответы со стороны сервиса для **всех** его операций.
 
 #### Демонстрация работы
-todo
+##### Post product
+<img src="screens/screen1.png" width=500 />
+
+<img src="screens/screen2.png" width=500 />
+
+<img src="screens/screen3.png" width=500 />
+
+##### Get product by id
+<img src="screens/screen4.png" width=500 />
+
+##### Put (update) product by id
+<img src="screens/screen5.png" width=500 />
+
+##### Delete product by id
+<img src="screens/screen6.png" width=500 />
+
+<img src="screens/screen8.png" width=500 />
+
+##### Get all products
+<img src="screens/screen7.png" width=500 />
 
 ### Задание В (4 балла)
 Пусть ваш продукт также имеет иконку (небольшую картинку). Формат иконки (картинки) может
@@ -84,7 +103,11 @@ todo
 ```
 
 #### Демонстрация работы
-todo
+<img src="screens/screen9.png" width=500 />
+
+<img src="screens/screen10.png" width=500 />
+
+<img src="screens/screen11.png" width=500 />
 
 ---
 
