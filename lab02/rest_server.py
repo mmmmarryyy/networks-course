@@ -77,7 +77,7 @@ def post_icon(product_id):
                 return product.get_json()
         abort(404)
     except:
-        abort(404)
+        abort(400)
 
 @app.route('/product/<int:product_id>/image', methods=['GET'])
 def get_image(product_id):
@@ -90,7 +90,7 @@ def get_image(product_id):
                 return send_file(os.path.join(os.getcwd(), 'icons', filename))
         abort(404)
     except:
-        abort(404)
+        abort(400)
 
 if __name__ == '__main__':
     icons = os.path.join(os.getcwd(), 'icons')
