@@ -17,4 +17,4 @@ target/
 *.dylib
 *.test
 *.out
-go.work
+*.DS_Store
