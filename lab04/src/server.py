@@ -179,6 +179,10 @@ if __name__ == "__main__":
             blacklist = json.load(file)['blacklist']
         log(f"BLACKLIST: {blacklist}")
 
+    if enable_cache:
+        if not os.path.exists('cache/'):
+            os.mkdir('cache/')
+
     try:
         proxy_server(port)
     finally:
