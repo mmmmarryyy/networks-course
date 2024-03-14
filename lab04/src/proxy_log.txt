@@ -1,0 +1,35 @@
+
+------------------------------------------------------------------------
+START SERVER
+------------------------------------------------------------------------
+Configuration: enable_cache = False, enable_blacklist = True
+BLACKLIST: ['www.youtube.com/', 'emkn.ru/']
+Proxy server is running on port 8888
+
+
+waiting for conneciton...
+GET request for url: https://gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file3.html
+Got response code 200 for url: https://gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file3.html
+
+
+waiting for conneciton...
+GET request for url: http://emkn.ru/
+Requested url http://emkn.ru/ is banned
+
+
+waiting for conneciton...
+
+------------------------------------------------------------------------
+START SERVER
+------------------------------------------------------------------------
+Configuration: enable_cache = False, enable_blacklist = True
+BLACKLIST: ['www.youtube.com/', 'emkn.ru/']
+Proxy server is running on port 8888
+
+
+waiting for conneciton...
+GET request for url: http://emkn.ru/
+Requested url http://emkn.ru/ is banned
+
+
+waiting for conneciton...
